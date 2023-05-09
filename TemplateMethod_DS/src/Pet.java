@@ -1,0 +1,43 @@
+import java.util.Date;
+public class Pet {
+    private String nome;
+    private Date data_nascimento;
+    private String comodidade;
+    private String descricao;
+    private int imagem;
+    private boolean cadastro;
+    private int idAbrigo;
+
+
+    public Pet(String nome, Date data_nascimento, String comodidade, String descricao, int imagem, boolean cadastro, int idAbrigo) {
+        this.nome = nome;
+        this.data_nascimento = data_nascimento;
+        this.comodidade = comodidade;
+        this.descricao = descricao;
+        this.imagem = imagem;
+        this.cadastro = cadastro;
+        this.idAbrigo = idAbrigo;
+
+    }
+
+    public void cadastraPet() {
+        System.out.println("Pet cadastrado com sucesso!");
+    }
+
+    public void editaPet(String nome, Date data_nascimento, String comodidade, String descricao, int imagem, boolean cadastro, int idAbrigo) {
+        this.nome = nome;
+        this.data_nascimento = data_nascimento;
+        this.comodidade = comodidade;
+        this.descricao = descricao;
+        this.imagem = imagem;
+        this.cadastro = cadastro;
+        this.idAbrigo = idAbrigo;
+        System.out.println("Pet editado com sucesso!");
+    }
+
+    public void removePet() {
+        System.out.println("Pet removido com sucesso!");
+    }
+
+
+}
