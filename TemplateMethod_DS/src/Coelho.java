@@ -23,4 +23,14 @@ public class Coelho extends Pet {
     public void removeCoelho() {
       System.out.println("Coelho removido com sucesso!");
     }
+    
+    @Override
+	public void pesarAnimal() {
+		 System.out.println("pesando Coelho");
+	}
+
+	@Override
+	public void vacinarAnimal() {
+		System.out.println("vacinando Coelho");
+	}
 }

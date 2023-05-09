@@ -28,4 +28,9 @@ public class Pessoa extends Doador{
       public void removePessoa() {
         System.out.println("Pessoa removida com sucesso!");
       }
+      
+      @Override
+  	public void fazerDoacaoDePet() {
+  		 System.out.println("Pessoa doando um pet!");
+  	}
 }

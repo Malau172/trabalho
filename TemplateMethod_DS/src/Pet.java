@@ -1,5 +1,5 @@
 import java.util.Date;
-public class Pet {
+public abstract class Pet {
     private String nome;
     private Date data_nascimento;
     private String comodidade;
@@ -38,6 +38,10 @@ public class Pet {
     public void removePet() {
         System.out.println("Pet removido com sucesso!");
     }
+    
+    public abstract void pesarAnimal();
+    
+    public abstract void vacinarAnimal();
 
 
 }

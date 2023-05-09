@@ -26,4 +26,9 @@ public class Ong extends Doador{
       public void removeOng() {
         System.out.println("Ong removida com sucesso!");
       }
+
+	@Override
+	public void fazerDoacaoDePet() {
+		 System.out.println("Ong doando um pet!");
+	}
 }

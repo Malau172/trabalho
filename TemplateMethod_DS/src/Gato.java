@@ -12,13 +12,23 @@ public class Gato extends Pet {
     }
     
     public void editaGato(String raca, int idPet) {
-    	  this.raca = raca;
-          this.idPet = idPet;
+    	this.raca = raca;
+         this.idPet = idPet;
     	  
-          System.out.println("Gato editado com sucesso!");
-      }
+         System.out.println("Gato editado com sucesso!");
+    }
 
-      public void removeGato() {
+    public void removeGato() {
         System.out.println("Gato removido com sucesso!");
-      }
+    }
+    
+    @Override
+   	public void pesarAnimal() {
+   		 System.out.println("pesando Coelho");
+   	}
+
+   	@Override
+   	public void vacinarAnimal() {
+   		System.out.println("vacinando Coelho");
+   	}
 }

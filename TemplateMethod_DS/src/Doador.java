@@ -1,5 +1,5 @@
 
-public class Doador {
+public abstract class Doador {
   private String nome;
   private String contato;
   private String email;
@@ -31,5 +31,6 @@ public class Doador {
     System.out.println("Adotante removido com sucesso!");
   }
 
+  public abstract void fazerDoacaoDePet();
   
 }

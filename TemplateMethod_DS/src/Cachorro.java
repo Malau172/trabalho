@@ -30,4 +30,14 @@ public class Cachorro extends Pet{
       public void removeCachorro() {
         System.out.println("Cachorro removido com sucesso!");
       }
+
+	@Override
+	public void pesarAnimal() {
+		 System.out.println("pesando cachorro");
+	}
+
+	@Override
+	public void vacinarAnimal() {
+		System.out.println("vacinando cachorro");
+	}
 }
