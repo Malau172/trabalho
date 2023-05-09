@@ -6,7 +6,7 @@ public class EnderecoAdotante {
   private String complemento;
   private int numero;
   
-  public EnderecoAdotante(String cep, String logradouro, String bairro, String email, String complemento, String numero) {
+  public EnderecoAdotante(String cep, String logradouro, String bairro, String email, String complemento, int numero) {
     this.cep = cep;
     this.logradouro = logradouro;
     this.bairro = bairro;
@@ -20,7 +20,7 @@ public class EnderecoAdotante {
     System.out.println("Endereço Adotante cadastrado com sucesso!");
   }
   
-  public void editaAdotante(String nome, String sobrenome, String email, int idEndereco, String contato, String telefone) {
+  public void editaAdotante(String cep, String logradouro, String bairro, String email, String complemento, int numero) {
     this.cep = cep;
     this.logradouro = logradouro;
     this.bairro = bairro;
