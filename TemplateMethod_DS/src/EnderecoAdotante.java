@@ -1,45 +1,39 @@
 public class EnderecoAdotante {
-  private String nome;
-  private String sobrenome;
-  private String contato;
+  private String cep;
+  private String logradouro;
+  private String bairro;
   private String email;
   private String complemento;
-  private String telefone;
-  private int idEndereco;
+  private int numero;
   
-  
-  public Adotante(String nome, String sobrenome, String email, int idEndereco, String contato, String telefone) {
-    this.nome = nome;
-    this.sobrenome = sobrenome;
-    this.contato = contato;
+  public EnderecoAdotante(String cep, String logradouro, String bairro, String email, String complemento, String numero) {
+    this.cep = cep;
+    this.logradouro = logradouro;
+    this.bairro = bairro;
     this.email = email;
     this.complemento = complemento;
-    this.telefone = telefone;
-    this.idEndereco = idEndereco;
-
+    this.numero = numero;
+    
   }
   
-  public void cadastraAdotante() {
-    System.out.println("Adotante cadastrado com sucesso!");
+  public void cadastraEnderecoAdotante() {
+    System.out.println("Endereço Adotante cadastrado com sucesso!");
   }
   
   public void editaAdotante(String nome, String sobrenome, String email, int idEndereco, String contato, String telefone) {
-    this.nome = nome;
-    this.sobrenome = sobrenome;
-    this.contato = contato;
+    this.cep = cep;
+    this.logradouro = logradouro;
+    this.bairro = bairro;
     this.email = email;
     this.complemento = complemento;
-    this.telefone = telefone;
-    this.idEndereco = idEndereco;
+    this.numero = numero;
   
-    System.out.println("Adotante editado com sucesso!");
+    System.out.println("Endereço Adotante  com sucesso!");
   }
   
   public void removeAdotante() {
-    System.out.println("Adotante removido com sucesso!");
+    System.out.println("Endereço Adotante  reovidocom sucesso!");
   }
-  
-
   
   
 }
