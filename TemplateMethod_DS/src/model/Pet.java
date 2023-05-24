@@ -15,12 +15,76 @@ public abstract class Pet {
     private Date data_nascimento;
     private String comodidade;
     private String descricao;
-    private int imagem;
+    private String imagem;
     private boolean cadastro;
     private int idAbrigo;
 
 
-    public Pet(String nome, Date data_nascimento, String comodidade, String descricao, int imagem, boolean cadastro, int idAbrigo) {
+    public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Date getData_nascimento() {
+		return data_nascimento;
+	}
+
+	public void setData_nascimento(Date data_nascimento) {
+		this.data_nascimento = data_nascimento;
+	}
+
+	public String getComodidade() {
+		return comodidade;
+	}
+
+	public void setComodidade(String comodidade) {
+		this.comodidade = comodidade;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String string) {
+		this.imagem = string;
+	}
+
+	public boolean isCadastro() {
+		return cadastro;
+	}
+
+	public void setCadastro(boolean cadastro) {
+		this.cadastro = cadastro;
+	}
+
+	public int getIdAbrigo() {
+		return idAbrigo;
+	}
+
+	public void setIdAbrigo(int idAbrigo) {
+		this.idAbrigo = idAbrigo;
+	}
+
+	public Pet(String nome, Date data_nascimento, String comodidade, String descricao, String imagem, boolean cadastro, int idAbrigo) {
         this.nome = nome;
         this.data_nascimento = data_nascimento;
         this.comodidade = comodidade;
@@ -35,7 +99,7 @@ public abstract class Pet {
         System.out.println("Pet cadastrado com sucesso!");
     }
 
-    public void editaPet(String nome, Date data_nascimento, String comodidade, String descricao, int imagem, boolean cadastro, int idAbrigo) {
+    public void editaPet(String nome, Date data_nascimento, String comodidade, String descricao, String imagem, boolean cadastro, int idAbrigo) {
         this.nome = nome;
         this.data_nascimento = data_nascimento;
         this.comodidade = comodidade;
