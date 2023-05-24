@@ -1,13 +1,16 @@
 package model;
 import java.util.Date;
-import model.Pet;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 
 public class Main {
     public static void main(String[] args) {
         GerenciamentoPets ger01 = GerenciamentoPets.getInstance();
         ger01.GeraRelatorio();
         
-        Pet pet = new Pet("nome", new Date("26/05/2001"), "comodidade", "descricao", "imagem", true, 1);
+        Pet pet = new Pet("nome", "26/05/2001", "comodidade", "descricao", "imagem", true, 1);
 //        pet.setNome("nome");
 //        pet.setCadastro(true);
 //        pet.setComodidade("mora na casinha");
@@ -18,6 +21,16 @@ public class Main {
 //        pet.setImagem("base64 imagem");
         String nome = pet.getNome();
         System.out.println(nome);
+        
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Pet");
+        EntityManager em = emf.createEntityManager();
+        
+        em.getTransaction();
+        em.persist(pet);
+        em.getTransaction().commit();
+        
+        em.close();
+        emf.close();
         
     }
 }

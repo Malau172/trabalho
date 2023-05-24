@@ -7,7 +7,7 @@ public class Cachorro extends Pet{
 	private boolean desvermificado;
 	private int idPet;
 
-    public Cachorro(String nome, Date data_nascimento, String comodidade, String descricao, String imagem, boolean cadastro, int idAbrigo, String raca, String vacinas, boolean desvermificado, int idPet) {
+    public Cachorro(String nome, String data_nascimento, String comodidade, String descricao, String imagem, boolean cadastro, int idAbrigo, String raca, String vacinas, boolean desvermificado, int idPet) {
         super(nome, data_nascimento, comodidade, descricao, imagem, cadastro, idAbrigo);
         this.raca = raca;
         this.vacinas = vacinas;

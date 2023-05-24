@@ -1,5 +1,4 @@
 package model;
-import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,7 +11,7 @@ public class Pet {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
     private String nome;
-    private Date data_nascimento;
+    private String data_nascimento;
     private String comodidade;
     private String descricao;
     private String imagem;
@@ -36,11 +35,11 @@ public class Pet {
 		this.nome = nome;
 	}
 
-	public Date getData_nascimento() {
+	public String getData_nascimento() {
 		return data_nascimento;
 	}
 
-	public void setData_nascimento(Date data_nascimento) {
+	public void setData_nascimento(String data_nascimento) {
 		this.data_nascimento = data_nascimento;
 	}
 
@@ -84,9 +83,9 @@ public class Pet {
 		this.idAbrigo = idAbrigo;
 	}
 
-	public Pet(String nome, Date data_nascimento, String comodidade, String descricao, String imagem, boolean cadastro, int idAbrigo) {
+	public Pet(String nome, String string, String comodidade, String descricao, String imagem, boolean cadastro, int idAbrigo) {
         this.nome = nome;
-        this.data_nascimento = data_nascimento;
+        this.data_nascimento = string;
         this.comodidade = comodidade;
         this.descricao = descricao;
         this.imagem = imagem;
@@ -99,7 +98,7 @@ public class Pet {
         System.out.println("Pet cadastrado com sucesso!");
     }
 
-    public void editaPet(String nome, Date data_nascimento, String comodidade, String descricao, String imagem, boolean cadastro, int idAbrigo) {
+    public void editaPet(String nome, String data_nascimento, String comodidade, String descricao, String imagem, boolean cadastro, int idAbrigo) {
         this.nome = nome;
         this.data_nascimento = data_nascimento;
         this.comodidade = comodidade;
