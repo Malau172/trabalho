@@ -6,7 +6,7 @@ public class Coelho extends Pet {
 	private String linhagem;
 	private int idPet;
 
-    public Coelho(String nome, Date data_nascimento, String comodidade, String descricao, int imagem, boolean cadastro, int idAbrigo, String raca, String linhagem, int idPet) {
+    public Coelho(String nome, Date data_nascimento, String comodidade, String descricao, String imagem, boolean cadastro, int idAbrigo, String raca, String linhagem, int idPet) {
         super(nome, data_nascimento, comodidade, descricao, imagem, cadastro, idAbrigo);
         this.raca = raca;
         this.linhagem = linhagem;
