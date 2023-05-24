@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public abstract class Pet {
+public class Pet {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -113,10 +113,10 @@ public abstract class Pet {
     public void removePet() {
         System.out.println("Pet removido com sucesso!");
     }
-    
-    public abstract void pesarAnimal();
-    
-    public abstract void vacinarAnimal();
+//    
+//    public abstract void pesarAnimal();
+//    
+//    public abstract void vacinarAnimal();
 
 
 }

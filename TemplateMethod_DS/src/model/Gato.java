@@ -23,13 +23,13 @@ public class Gato extends Pet {
         System.out.println("Gato removido com sucesso!");
     }
     
-    @Override
-   	public void pesarAnimal() {
-   		 System.out.println("pesando Coelho");
-   	}
-
-   	@Override
-   	public void vacinarAnimal() {
-   		System.out.println("vacinando Coelho");
-   	}
+//    @Override
+//   	public void pesarAnimal() {
+//   		 System.out.println("pesando Coelho");
+//   	}
+//
+//   	@Override
+//   	public void vacinarAnimal() {
+//   		System.out.println("vacinando Coelho");
+//   	}
 }
