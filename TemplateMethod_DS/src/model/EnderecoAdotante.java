@@ -1,3 +1,4 @@
+package model;
 public class EnderecoAdotante {
   private String cep;
   private String logradouro;

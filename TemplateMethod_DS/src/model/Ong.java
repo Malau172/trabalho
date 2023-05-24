@@ -1,3 +1,4 @@
+package model;
 
 public class Ong extends Doador{
 	 private String descricao;

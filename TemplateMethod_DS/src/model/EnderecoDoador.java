@@ -1,3 +1,4 @@
+package model;
 
 public class EnderecoDoador {
   private String cep;
