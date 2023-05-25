@@ -1,21 +1,17 @@
 package model;
 public class Adotante {
   private String nome;
-  private String sobrenome;
   private String contato;
   private String email;
   private String complemento;
-  private String telefone;
   private int idEndereco;
 
 
-  public Adotante(String nome, String sobrenome, String email, int idEndereco, String contato, String telefone) {
+  public Adotante(String nome, String email, int idEndereco, String contato) {
     this.nome = nome;
-    this.sobrenome = sobrenome;
     this.contato = contato;
     this.email = email;
     this.complemento = complemento;
-    this.telefone = telefone;
     this.idEndereco = idEndereco;
 
 }

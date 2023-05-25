@@ -13,6 +13,6 @@ public class GerenciamentoPets {
 	}
 	
 	public void GeraRelatorio() {
-		System.out.println("Gerando relatorio de pets");
+		System.out.println("Gerando relatório de pets");
 	}
 }
